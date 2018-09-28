@@ -1,0 +1,46 @@
+@import "../../_variables.styl"
+
+.header
+  color color__base--black
+  display block
+  font-family header-text__font-family
+  font-weight header-text__font-weight--bold
+
+.header--main
+  @extend .header
+
+  font-size h1--font-size
+  letter-spacing header-text__letter-spacing
+  line-height h1--line-height
+  margin h1--margin
+
+.header--sub
+  @extend .header
+
+  font-size h2--font-size
+  line-height h2--line-height
+  margin h2--margin
+
+.header--sub--small
+  @extend .header
+
+  font-size h3--font-size
+  line-height h3--line-height
+  margin h3--margin
+
+.header--sub--tiny
+  @extend .header
+
+  font-family header-text__font-weight--light
+  font-size h4--font-size
+  line-height h4--line-height
+  margin h4--margin
+  text-transform uppercase
+
+.header--promo
+  @extend .header
+
+  font-weight header-text__font-weight--light
+  font-size h3--font-size
+  line-height h3--line-height
+  margin h3--margin

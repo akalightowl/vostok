@@ -1,0 +1,17 @@
+{
+  "name": "vostok1",
+  "version": "0.0.1",
+  "description": "Simple wireframe to create robust pages on different frameworks. Bem elements on Stylus for a fast start with Angular or Pug or simple HTML/CSS project.",
+  "main": "index.html",
+  "repository": "git@github.com:akalightowl/vostok1.git",
+  "author": "Denis Savenko <akalightowl@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylus": "^2.7.0",
+    "postcss-preset-env": "^6.0.7"
+  }
+}

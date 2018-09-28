@@ -1,0 +1,22 @@
+@import '../../_variables.styl'
+
+.layout
+  box-sizing border-box
+  display block
+  width 100%
+
+.layout__container
+  @extend .layout
+  margin 0 auto
+  max-width max-width
+  padding 0 padding--big
+
+.layout__col2
+  @extend .layout
+  display grid
+  grid-template-columns 1fr 1fr
+
+.layout__col2--62-38
+  @extend .layout
+  display grid
+  grid-template-columns 62% 38%

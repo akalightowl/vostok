@@ -1,0 +1,60 @@
+/* This styles created only for demo and example.
+   This is not a part of Vostok1. All you need locate in src/styl/
+ */
+@import "styl/_variables"
+@import "styl/blocks/logo"
+@import "styl/blocks/header"
+@import "styl/blocks/layout"
+@import "styl/blocks/text"
+
+body
+  background url('./img/bg.jpg') right -140px no-repeat #00112b
+
+.head
+  background
+  display block
+  overflow hidden
+
+.head__nav
+  @extend .layout__col2
+
+  margin-top margin--huge
+
+.nav__logo
+  justify-self start
+
+.nav__menu
+  justify-self end
+
+.head__promo
+  margin-top 20vh
+  max-width 62%
+  overflow hidden
+  padding-bottom: 8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+
+.promo__header
+  @extend .header--main
+
+  color white
+
+.promo__header--promo
+  @extend .header--promo
+
+  color white
+
+.page__container
+  @extend .layout__container
+
+.page__wrapper
+  @extend .layout__col2--62-38
+
+.content__header
+  @extend .header--sub
+
+  color color__base--white
+
+.content__text
+  @extend .text
+
+  color color__base--white
