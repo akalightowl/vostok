@@ -1,7 +1,7 @@
 @import "../../_variables.styl"
 
 .header
-  color color__base--main
+  color color-main
   display block
   font-family header--font-family
   font-weight header--font-weight--bold
@@ -35,5 +35,8 @@
     line-height header__small--line-height
     margin header__small--margin
 
+  &--no-top-margin
+    margin-top 0
+
   &--contrast
-    color color__base--white
+    color color-gray--lightest

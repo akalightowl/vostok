@@ -1,14 +1,18 @@
 @import "../../_variables.styl"
 
 .text
-  color color__base--main
+  color color-main
   display inline-block
   font-family text--font-family
   font-size text--font-size
   font-weight text--font-weight--normal
   line-height text--line-height
-  margin 0 0 margin 0
+  margin 0 0 margin--base 0
   text-decoration none
 
+.text--bold
+  font-weight text--font-weight--bold
+
 .text--contrast
-  color color__base--main--contrast;
+  color color-gray--lightest;
+

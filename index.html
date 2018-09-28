@@ -20,56 +20,190 @@
     <div class="layout__wrapper main-nav__wrapper">
       <a class="logo nav__logo">Vostok 1</a>
       <nav class="menu nav__menu">
-        <a class="menu__link" href="https://en.wikipedia.org/wiki/Yuri_Gagarin">Yuri&nbsp; Gagarin</a>
-        <a class="menu__link" href="https://en.wikipedia.org/wiki/Alexey_Leonov">Alexey&nbsp; Leonov</a>
-        <a class="menu__link" href="https://en.wikipedia.org/wiki/Valentina_Tereshkova">Valentina&nbsp; Tereshkova</a>
+        <a class="menu__item menu__item--contrast menu__item--bold menu__item--uppercase menu__item--haf-b"
+           href="https://en.wikipedia.org/wiki/Yuri_Gagarin">Yuri&nbsp; Gagarin</a>
+        <a class="menu__item menu__item--contrast menu__item--bold menu__item--uppercase menu__item--haf-b"
+           href="https://en.wikipedia.org/wiki/Alexey_Leonov">Alexey&nbsp; Leonov</a>
+        <a class="menu__item menu__item--contrast menu__item--bold menu__item--uppercase menu__item--haf-b"
+           href="https://en.wikipedia.org/wiki/Valentina_Tereshkova">Valentina&nbsp; Tereshkova</a>
       </nav>
     </div>
   </div>
 </div>
 <div class="promo">
   <div class="layout__container">
-    <div class="layout__wrapper promo__wrapper">
-      <header__main class="promo__header">
+    <header class="layout__wrapper promo__wrapper">
+      <h1 class="header header--main header--contrast promo__header--main">
         Vostok 1
-      </header__main>
-      <header__sub class="promo__header--promo">
+      </h1>
+      <h3 class="header header--promo header--contrast promo__header--promo">
         It was the first spaceflight of the Vostok programme and the first
         manned spaceflight in history. The Vostok 3KA space capsule was launched from Baikonur Cosmodrome on April
         12,
         1961, with Soviet cosmonaut Yuri&nbsp;Gagarin aboard, making him the first human to cross into outer space.
-      </header__sub>
-    </div>
+      </h3>
+    </header>
   </div>
 </div>
 <section class="introduction">
   <div class="layout__container">
     <div class="layout__wrapper introduction__wrapper">
-      <div class="header header--main header--contrast">
+      <div class="header header--sub header--contrast">
         And what about a wireframe to create robust pages for different frameworks?
       </div>
       <p class="text text--contrast">
-        Vostok 1 is a simple collection of elements wrote on <a href="" class="link">Stylus</a> with <a
-          href="" class="link">BEM-notation</a>. You can think about it like a starter Kit for most boring
+        Vostok 1 is a simple collection of elements wrote on <a href="http://stylus-lang.com/"
+                                                                class="link link--dotted link--haf--b">Stylus</a> with
+        <a
+            href="https://en.bem.info/" class="link link--dotted link--haf--b">BEM-notation</a>. You can think about it
+        like a starter Kit for most boring
         and repeated operation in page creation. It's like bootstrap, but very simple and create for advanced uses
         with Angular or self-created pages with Pug or whatever you use. On this page you can see all elements with
         code description.
       </p>
-      <div class="header">
+      <div class="header header--sub header--contrast">
         How I can start use it?
       </div>
       <p class="text text--contrast">
-        You can copy styl files from /src/styl/ folder on GitHub repo in you project &mdash; that's all.</p>
+        You can copy files from <span class="text text--bold text--contrast">/src/styl/</span> folder on <a
+          href="https://github.com/akalightowl/vostok1" class="link link--dotted link--haf--b">GitHub repo</a> in you
+        project &mdash; that's all.</p>
       <p class="text text--contrast"> All other code with Gulp and styles added only for create this GitHub page. It's
         not a
         part of Vostok 1 but you can read it if you want some example. </p>
-      <p class="text text--contrast">Note: on this page use reset.css created by Eric Meyer. This is not good practice
+      <p class="text text--contrast">Note: on this page use <a href="https://github.com/shannonmoeller/reset-css"
+                                                               class="link link--dotted link--haf--b">reset.css</a>
+        created by Eric Meyer. This is not good practice
         for
-        vanila BEM, but it's normal for fast develop. Alternativity you can use postCSS plagin for reset styles,
+        vanila BEM, but it's normal for fast develop. Alternatively you can use <a
+            href="https://github.com/maximkoretskiy/postcss-initial" class="link link--dotted link--haf--b">PostCSS
+          plugin</a> for reset styles,
         but
         be careful with style's order.
       </p>
     </div>
+  </div>
+</section>
+<section class="uikit">
+  <div class="layout__container">
+    <div class="layout--wrapper">
+      <h3 class="header header--main uikit__item">Documentation</h3>
+    </div>
+    <div class="layout--wrapper uikit__wrapper">
+      <div class="uikit--content">
+        <h3 class="header header--promo uikit__header">Element</h3>
+      </div>
+      <div class="uikit--tag-name">
+        <h3 class="header header--promo uikit__header">Class</h3>
+      </div>
+      <div class="uikit--content">
+        <h1 class="header header--main uikit__item">Header</h1>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.header .header--main</span>
+      </div>
+      <div class="uikit--content">
+        <h2 class="header header--sub uikit__item">Sub header</h2>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.header .header--sub</span>
+      </div>
+      <div class="uikit--content">
+        <h3 class="header header--small uikit__item">Small header</h3>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.header .header--small</span>
+      </div>
+      <div class="uikit--content">
+        <h4 class="header header--tiny uikit__item">Tiny header</h4>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.header .header--tiny</span>
+      </div>
+      <div class="uikit--content">
+        <h3 class="header header--promo uikit__item">Promo text</h3>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.header .header--promo</span>
+      </div>
+      <div class="uikit--content">
+        <p class="text">Text. It was the first spaceflight of the Vostok programme and the first manned spaceflight in
+          history. The Vostok 3KA space capsule was launched from Baikonur Cosmodrome on April 12, 1961, with Soviet
+          cosmonaut Yuri Gagarin aboard, making him the first human to cross into outer space. </p>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.text</span>
+      </div>
+      <div class="uikit--content">
+        <p class="text text--bold">Text. It was the first spaceflight of the Vostok programme and the first manned
+          spaceflight in
+          history. The Vostok 3KA space capsule was launched from Baikonur Cosmodrome on April 12, 1961, with Soviet
+          cosmonaut Yuri Gagarin aboard, making him the first human to cross into outer space. </p>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.text .text--bold</span>
+      </div>
+      <div class="uikit--content">
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link">Link to «Vostok 1» article.</a>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.link</span>
+      </div>
+      <div class="uikit--content">
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--haf--o">Link with hover-active-focus opacity
+          effect.</a>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.link .link--haf--o</span>
+      </div>
+      <div class="uikit--content">
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--haf--b">Link with hover-active-focus bordered
+          effect.</a>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.link .link--haf--b</span>
+      </div>
+
+      <div class="uikit--content">
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--dotted">Link with dotted effect to «Vostok 1»
+          article</a>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.link .link--dotted</span>
+      </div>
+
+      <div class="uikit--content">
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--dotted link--haf--o">Link with dotted and hover-active-focus opacity effect.</a>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.link .link--dotted .link--haf--o</span>
+      </div>
+
+      <div class="uikit--content">
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--dotted link--haf--b">Link with dotted and bordered opacity effect</a>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.link .link--dotted .link--haf--b</span>
+      </div>
+
+      <div class="uikit--content">
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--bordered">Link with bordered effect to
+          «Vostok 1» article</a>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.link .link--bordered</span>
+      </div>
+
+      <div class="uikit--content">
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--bordered link--haf--o">Link with bordered and hover-active-focus opacity effect.</a>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.link .link--bordered link--haf--o</span>
+      </div>
+
+
+    </div>
+  </div>
 </section>
 </body>
 

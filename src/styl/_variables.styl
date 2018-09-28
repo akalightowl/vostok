@@ -71,31 +71,32 @@ header__tiny--line-height--mobile = 1.6rem
   built-in functions in Stylus (but be careful with colors born in math)
 */
 
-color__base--main = #040E14
+color-main = #040E14
 
-color__brand--lightest = #F28D8D
-color__brand--lighten = #ED6060
-color__brand--light = #E83333 // color__brand - 2 steps
-color__brand = #E40606
-color__brand--dark = #BB0505 // color__brand + 2 steps
-color__brand--darken = #920404
-color__brand--darkest = #680303
+color-brand--lightest = #F28D8D
+color-brand--lighten = #ED6060
+color-brand--light = #E83333 // color-brand - 2 steps
+color-brand = #E40606
+color-brand--dark = #BB0505 // color-brand + 2 steps
+color-brand--darken = #920404
+color-brand--darkest = #680303
 
-color__gray--lightest = #F2F3F3 // contrast for color__main
-color__gray--lighten = #DFE1E1
-color__gray--light = #CCCFCF
-color__gray = #BABDBE // color__main - 8 steps
-color__gray--dark = #8C9194
-color__gray--darken = #5F6569
-color__gray--darkest = #31393E
+color-gray--lightest = #F2F3F3 // contrast for color-main
+color-gray--lighten = #DFE1E1
+color-gray--light = #CCCFCF
+color-gray = #BABDBE // color-main - 8 steps
+color-gray--dark = #8C9194
+color-gray--darken = #5F6569
+color-gray--darkest = #31393E
 
 // Additional colors
 
-color__base--white = #FFFFFF
-color__base--smoke = #F6F5F0
-color__success = #189853
-color__warning = #F7D002
-color__danger = #F02D3A
+color-white = #FFFFFF
+color-smoke = #F6F5F0
+color-success = #189853
+color-warning = #F7D002
+color-danger = #F02D3A
+color-info = #f3ecbe
 
 ///////////////////////////////////////////////////////////////////////////////
 // Margins
@@ -103,7 +104,7 @@ color__danger = #F02D3A
 
 margin--tiny = 2px
 margin--small = 0.5rem
-margin = 1rem
+margin--base = 1rem
 margin--big = 2rem
 margin--huge = 4rem
 
@@ -113,7 +114,7 @@ margin--huge = 4rem
 
 padding--tiny = 2px
 padding--small = 0.5rem
-padding = 1rem
+padding--base = 1rem
 padding--big = 2rem
 padding--huge = 4rem
 
@@ -142,63 +143,63 @@ opacity--shadow = .2
 
 // Desktop windows dpi
 
-mq--windows--100 = 96dpi
-mq--windows--125 = 120dpi
-mq--windows--150 = 144dpi
-mq--windows--175 = 150dpi
+mq-windows--100 = 96dpi
+mq-windows--125 = 120dpi
+mq-windows--150 = 144dpi
+mq-windows--175 = 150dpi
 
 // Global queries
 
-mq--desktop--start = 1024px
-mq--desktop-big--start = 1200px
-mq--full--hd = 1920px
+mq-desktop--start = 1024px
+mq-desktop-big--start = 1200px
+mq-full--hd = 1920px
 
 // Mobile & Tablet
 
 // Portrait
 
-mq--mobile--iphone455s--p = 320px
-mq--mobile--iphone455s--p--res = 2dppx
+mq-mobile--iphone455s--p = 320px
+mq-mobile--iphone455s--p--res = 2dppx
 
-mq--mobile--galaxy3--p = 320px
-mq--mobile--galaxy3--p--res = 2dppx
+mq-mobile--galaxy3--p = 320px
+mq-mobile--galaxy3--p--res = 2dppx
 
-mq--mobile--galaxy45--p = 320px
-mq--mobile--galaxy3--p--res = 3dppx
+mq-mobile--galaxy45--p = 320px
+mq-mobile--galaxy3--p--res = 3dppx
 
-mq--mobile--galaxy6--p = 360px
-mq--mobile--galaxy6--p--res = 4dppx
+mq-mobile--galaxy6--p = 360px
+mq-mobile--galaxy6--p--res = 4dppx
 
-mq--mobile--iphone66s78--p = 375px
-mq--mobile--iphone66s78--p--res = 2dppx
+mq-mobile--iphone66s78--p = 375px
+mq-mobile--iphone66s78--p--res = 2dppx
 
-mq--mobile--iphoneX--p = 375px
-mq--mobile--iphoneX--p-res = 3dppx
+mq-mobile--iphoneX--p = 375px
+mq-mobile--iphoneX--p-res = 3dppx
 
-mq--mobile--iphone6p7p8p--p = 414px
-mq--mobile--iphone6p7p8p--p--res = 3dppx
+mq-mobile--iphone6p7p8p--p = 414px
+mq-mobile--iphone6p7p8p--p--res = 3dppx
 
 // Landscape
 
-mq--mobile--iphone455s--l = 480px
-mq--mobile--iphone455s--l--res = 2dppx
+mq-mobile--iphone455s--l = 480px
+mq-mobile--iphone455s--l--res = 2dppx
 
-mq--mobile--iphone55s--l = 568px
-mq--mobile--iphone55s--l--res = 2dppx
+mq-mobile--iphone55s--l = 568px
+mq-mobile--iphone55s--l--res = 2dppx
 
-mq--mobile--galaxy3456--l = 640px
-mq--mobile--galaxy3--l--res = 2dppx
-mq--mobile--galaxy45--l--res = 3dppx
-mq--mobile--galaxy6--l--res = 4dppx
+mq-mobile--galaxy3456--l = 640px
+mq-mobile--galaxy3--l--res = 2dppx
+mq-mobile--galaxy45--l--res = 3dppx
+mq-mobile--galaxy6--l--res = 4dppx
 
-mq--mobile--iphone66s78--l = 667px
-mq--mobile--iphone66s78--l--res = 2dppx
+mq-mobile--iphone66s78--l = 667px
+mq-mobile--iphone66s78--l--res = 2dppx
 
-mq--mobile--iphoneX--l = 812px
-mq--mobile--iphoneX--l-res = 3dppx
+mq-mobile--iphoneX--l = 812px
+mq-mobile--iphoneX--l-res = 3dppx
 
-mq--mobile--iphone6p7p8p--l = 736px
-mq--mobile--iphone6p7p8p--l--res = 3dppx
+mq-mobile--iphone6p7p8p--l = 736px
+mq-mobile--iphone6p7p8p--l--res = 3dppx
 
 ///////////////////////////////////////////////////////////////////////////////
 // Buttons
@@ -208,9 +209,9 @@ btn--border-radius--top-left = 6px
 btn--border-radius--top-right = 6px
 btn--border-radius--bottom-left = 6px
 btn--border-radius--bottom-right = 6px
-btn--background = color__brand--lightest
-btn--background--hover = color__brand--lighten
-btn--background--active = color__brand--light
+btn--background = color-brand--lightest
+btn--background--hover = color-brand--lighten
+btn--background--active = color-brand--light
 btn--padding = .5rem 1rem
 btn--padding--v = .5rem
 btn--padding--h = 1rem
@@ -220,7 +221,7 @@ btn--font-size = .8rem
 btn--font-family = text--font-family
 btn--font-weight = text--font-weight--bold
 btn--letter-space = 2px
-btn--color = color__base--white
+btn--color = color-white
 btn--transform = uppercase
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -243,7 +244,7 @@ times--elements = .68s ease-in-out
 max-width = 75rem + padding--big* 2
 border-radius = 6px
 border-radius--big = 9px
-box-shadow = 0 0 50px rgba(color__gray--darkest, .48)
+box-shadow = 0 0 50px rgba(color-gray--darkest, .48)
 scale--click = .97
 
 

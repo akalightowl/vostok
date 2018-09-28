@@ -1,0 +1,67 @@
+@import "../../_variables.styl"
+
+.menu
+  display flex
+
+  &--vertical
+    flex-direction column
+
+  &__item
+    color color-main
+    cursor pointer
+    display inline-block
+    font-family text--font-family
+    font-size text__small--font-size
+    font-weight text--font-weight--normal
+    letter-spacing header--letter-spacing
+    line-height text--line-height
+    margin-right margin--base
+    text-decoration none
+
+    &--bold
+      font-weight text--font-weight--bold
+
+    &--uppercase
+      text-transform uppercase
+
+    &--contrast
+      color color-gray--lightest
+
+      &^[1]--haf-b
+        border-bottom  1px solid transparent
+        &:hover,
+        &:focus,
+        &:focus:hover {
+          color color-gray--lighten
+          border-bottom  1px solid color-gray--lighten
+        }
+        &:active,
+        &:focus:active {
+          color color-gray--light
+          border-bottom 1px solid color-gray--light
+        }
+
+    &--haf-o
+      &:hover,
+      &:focus,
+      &:focus:hover {
+        opacity opacity--focus
+      }
+      &:active,
+      &:focus:active {
+        opacity opacity--active
+      }
+
+    &--haf-b
+      border-bottom  1px solid transparent
+      &:hover,
+      &:focus,
+      &:focus:hover {
+        color color-brand--dark
+        border-bottom  1px solid color-brand--dark
+      }
+      &:active,
+      &:focus:active {
+        color color-brand--darken
+        border-bottom 1px solid color-brand--darken
+      }

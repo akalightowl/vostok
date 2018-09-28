@@ -1,0 +1,46 @@
+@import "../../_variables.styl"
+/*
+  haf - hover active focus
+  haf--o - hover active focus with opacity
+  haf--b - hover active focus with border
+ */
+.link
+  color color-brand
+  display inline
+  font-family text--font-family
+  font-size text--font-size
+  font-weight text--font-weight--normal
+  line-height text--line-height
+  margin 0 0 margin--base 0
+  text-decoration none
+
+  &--dotted
+    border-bottom 1px dotted color-brand
+
+  &--bordered
+    border-bottom 1px solid color-brand
+
+  &--haf--o
+    &:hover,
+    &:focus,
+    &:focus:hover {
+      opacity opacity--focus
+    }
+    &:active,
+    &:focus:active {
+      opacity opacity--active
+    }
+
+  &--haf--b
+    border-bottom-width 1px
+    &:hover,
+    &:focus,
+    &:focus:hover {
+      color color-brand--dark
+      border-bottom 1px solid color-brand--dark
+    }
+    &:active,
+    &:focus:active {
+      color color-brand--darken
+      border-bottom 1px solid color-brand--darken
+    }
