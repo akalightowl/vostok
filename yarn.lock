@@ -90,14 +90,14 @@
     css "^2.2.1"
     normalize-path "^2.1.1"
     source-map "^0.6.0"
-    through2 "^2.0.3"
+    througheader__sub "^2.0.3"
 
 "@gulp-sourcemaps/map-sources@1.X":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@gulp-sourcemaps/map-sources/-/map-sources-1.0.0.tgz#890ae7c5d8c877f6d384860215ace9d7ec945bda"
   dependencies:
     normalize-path "^2.0.1"
-    through2 "^2.0.3"
+    througheader__sub "^2.0.3"
 
 abbrev@1:
   version "1.1.1"
@@ -1263,7 +1263,7 @@ glob-stream@^3.1.5:
     glob2base "^0.0.12"
     minimatch "^2.0.1"
     ordered-read-streams "^0.1.0"
-    through2 "^0.6.1"
+    througheader__sub "^0.6.1"
     unique-stream "^1.0.0"
 
 glob-watcher@^0.0.6:
@@ -1391,7 +1391,7 @@ gulp-sourcemaps@^2.6.4:
     graceful-fs "4.X"
     source-map "~0.6.0"
     strip-bom-string "1.X"
-    through2 "2.X"
+    througheader__sub "2.X"
 
 gulp-stylus@^2.7.0:
   version "2.7.0"
@@ -1402,7 +1402,7 @@ gulp-stylus@^2.7.0:
     plugin-error "^0.1.2"
     replace-ext "0.0.1"
     stylus "^0.54.0"
-    through2 "^2.0.0"
+    througheader__sub "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
 gulp-util@^3.0.0:
@@ -1425,7 +1425,7 @@ gulp-util@^3.0.0:
     multipipe "^0.1.2"
     object-assign "^3.0.0"
     replace-ext "0.0.1"
-    through2 "^2.0.0"
+    througheader__sub "^2.0.0"
     vinyl "^0.5.0"
 
 gulp@^3.9.1:
@@ -3472,16 +3472,16 @@ tfunk@^3.0.1:
     chalk "^1.1.1"
     object-path "^0.9.0"
 
-through2@2.X, through2@^2.0.0, through2@^2.0.3:
+througheader__sub@2.X, througheader__sub@^2.0.0, througheader__sub@^2.0.3:
   version "2.0.3"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
+  resolved "https://registry.yarnpkg.com/througheader__sub/-/througheader__sub-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
   dependencies:
     readable-stream "^2.1.5"
     xtend "~4.0.1"
 
-through2@^0.6.1:
+througheader__sub@^0.6.1:
   version "0.6.5"
-  resolved "https://registry.yarnpkg.com/through2/-/through2-0.6.5.tgz#41ab9c67b29d57209071410e1d7a7a968cd3ad48"
+  resolved "https://registry.yarnpkg.com/througheader__sub/-/througheader__sub-0.6.5.tgz#41ab9c67b29d57209071410e1d7a7a968cd3ad48"
   dependencies:
     readable-stream ">=1.0.33-1 <1.1.0-0"
     xtend ">=4.0.0 <4.1.0-0"
@@ -3637,7 +3637,7 @@ vinyl-fs@^0.3.0:
     graceful-fs "^3.0.0"
     mkdirp "^0.5.0"
     strip-bom "^1.0.0"
-    through2 "^0.6.1"
+    througheader__sub "^0.6.1"
     vinyl "^0.4.0"
 
 vinyl-sourcemaps-apply@^0.2.0, vinyl-sourcemaps-apply@^0.2.1:

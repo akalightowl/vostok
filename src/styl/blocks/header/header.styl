@@ -1,46 +1,39 @@
 @import "../../_variables.styl"
 
 .header
-  color color__base--black
+  color color__base--main
   display block
-  font-family header-text__font-family
-  font-weight header-text__font-weight--bold
+  font-family header--font-family
+  font-weight header--font-weight--bold
 
-.header--main
-  @extend .header
+  &--main
+    font-size header__main--font-size
+    letter-spacing header--letter-spacing
+    line-height header__main--line-height
+    margin header__main--margin
 
-  font-size h1--font-size
-  letter-spacing header-text__letter-spacing
-  line-height h1--line-height
-  margin h1--margin
+  &--sub
+    font-size header__sub--font-size
+    line-height header__sub--line-height
+    margin header__sub--margin
 
-.header--sub
-  @extend .header
+  &--small
+    font-size header__small--font-size
+    line-height header__small--line-height
+    margin header__small--margin
 
-  font-size h2--font-size
-  line-height h2--line-height
-  margin h2--margin
+  &--tiny
+    font-weight header--font-weight--light
+    font-size header__tiny--font-size
+    line-height header__tiny--line-height
+    margin header__tiny--margin
+    text-transform uppercase
 
-.header--sub--small
-  @extend .header
+  &--promo
+    font-weight header--font-weight--light
+    font-size header__small--font-size
+    line-height header__small--line-height
+    margin header__small--margin
 
-  font-size h3--font-size
-  line-height h3--line-height
-  margin h3--margin
-
-.header--sub--tiny
-  @extend .header
-
-  font-family header-text__font-weight--light
-  font-size h4--font-size
-  line-height h4--line-height
-  margin h4--margin
-  text-transform uppercase
-
-.header--promo
-  @extend .header
-
-  font-weight header-text__font-weight--light
-  font-size h3--font-size
-  line-height h3--line-height
-  margin h3--margin
+  &--contrast
+    color color__base--white

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -12,62 +13,64 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" href="./dist/style.css">
 </head>
+
 <body>
-<div class="head">
+<div class="main-nav">
   <div class="layout__container">
-    <div class="layout__wrapper">
-      <div class="head__nav">
-        <a class="logo nav__logo">Vostok 1</a>
-        <nav class="menu nav__menu">
-          <a class="menu__link" href="https://en.wikipedia.org/wiki/Yuri_Gagarin">Yuri&nbsp; Gagarin</a>
-          <a class="menu__link" href="https://en.wikipedia.org/wiki/Alexey_Leonov">Alexey&nbsp; Leonov</a>
-          <a class="menu__link" href="https://en.wikipedia.org/wiki/Valentina_Tereshkova">Valentina&nbsp; Tereshkova</a>
-        </nav>
-      </div>
-      <div class="promo head__promo">
-        <h1 class="promo__header">
-          Vostok 1
-        </h1>
-        <h2 class="promo__header--promo">
-          It was the first spaceflight of the Vostok programme and the first
-          manned spaceflight in history. The Vostok 3KA space capsule was launched from Baikonur Cosmodrome on April 12,
-          1961, with Soviet cosmonaut Yuri&nbsp;Gagarin aboard, making him the first human to cross into outer space.
-        </h2>
-      </div>
+    <div class="layout__wrapper main-nav__wrapper">
+      <a class="logo nav__logo">Vostok 1</a>
+      <nav class="menu nav__menu">
+        <a class="menu__link" href="https://en.wikipedia.org/wiki/Yuri_Gagarin">Yuri&nbsp; Gagarin</a>
+        <a class="menu__link" href="https://en.wikipedia.org/wiki/Alexey_Leonov">Alexey&nbsp; Leonov</a>
+        <a class="menu__link" href="https://en.wikipedia.org/wiki/Valentina_Tereshkova">Valentina&nbsp; Tereshkova</a>
+      </nav>
     </div>
   </div>
 </div>
-<main class="page">
-  <div class="page__container">
-    <div class="page__wrapper">
-      <div class="content">
-        <div class="content__header">
-          And what about a wireframe to create robust pages for different frameworks?
-        </div>
-        <p class="content__text">
-          Vostok 1 is a simple collection of elements wrote on <a href="" class="content__link">Stylus</a> with <a
-            href="" class="content__link">BEM-notation</a>. You can think about it like a starter Kit for most boring
-          and repeated operation in page creation. It's like bootstrap, but very simple and create for advanced uses
-          with Angular or self-created pages with Pug or whatever you use. On this page you can see all elements with
-          code description.
-        </p>
-        <div class="content__header">
-          How I can start use it?
-        </div>
-        <p class="content__text">
-          You can copy styl files from /src/styl/ folder on GitHub repo in you project &mdash; that's all.</p>
-        <p class="content__text"> All other code with Gulp and styles added only for create this GitHub page. It's not a
-          part of Vostok 1 but you can read it if you want some example. </p>
-        <p class="content__text">Note: on this page use reset.css created by Eric Meyer. This is not good practice for
-          vanila BEM, but it's normal for fast develop. Alternativity you can use postCSS plagin for reset styles, but
-          be careful with style's order.
-        </p>
-      </div>
-      <div class="content__menu">
-
-      </div>
+<div class="promo">
+  <div class="layout__container">
+    <div class="layout__wrapper promo__wrapper">
+      <header__main class="promo__header">
+        Vostok 1
+      </header__main>
+      <header__sub class="promo__header--promo">
+        It was the first spaceflight of the Vostok programme and the first
+        manned spaceflight in history. The Vostok 3KA space capsule was launched from Baikonur Cosmodrome on April
+        12,
+        1961, with Soviet cosmonaut Yuri&nbsp;Gagarin aboard, making him the first human to cross into outer space.
+      </header__sub>
     </div>
   </div>
-</main>
+</div>
+<section class="introduction">
+  <div class="layout__container">
+    <div class="layout__wrapper introduction__wrapper">
+      <div class="header header--main header--contrast">
+        And what about a wireframe to create robust pages for different frameworks?
+      </div>
+      <p class="text text--contrast">
+        Vostok 1 is a simple collection of elements wrote on <a href="" class="link">Stylus</a> with <a
+          href="" class="link">BEM-notation</a>. You can think about it like a starter Kit for most boring
+        and repeated operation in page creation. It's like bootstrap, but very simple and create for advanced uses
+        with Angular or self-created pages with Pug or whatever you use. On this page you can see all elements with
+        code description.
+      </p>
+      <div class="header">
+        How I can start use it?
+      </div>
+      <p class="text text--contrast">
+        You can copy styl files from /src/styl/ folder on GitHub repo in you project &mdash; that's all.</p>
+      <p class="text text--contrast"> All other code with Gulp and styles added only for create this GitHub page. It's
+        not a
+        part of Vostok 1 but you can read it if you want some example. </p>
+      <p class="text text--contrast">Note: on this page use reset.css created by Eric Meyer. This is not good practice
+        for
+        vanila BEM, but it's normal for fast develop. Alternativity you can use postCSS plagin for reset styles,
+        but
+        be careful with style's order.
+      </p>
+    </div>
+</section>
 </body>
+
 </html>
