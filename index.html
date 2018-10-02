@@ -18,7 +18,12 @@
 <div class="main-nav">
   <div class="layout__container">
     <div class="layout__wrapper main-nav__wrapper">
-      <a class="logo nav__logo">Vostok 1</a>
+      <a class="logo logo--contrast nav__logo">Vostok 1</a>
+      <span class="hamburger main-nav__hamburger">
+          <span class="hamburger__line hamburger__line--contrast"></span>
+          <span class="hamburger__line hamburger__line--contrast"></span>
+          <span class="hamburger__line hamburger__line--contrast"></span>
+      </span>
       <nav class="menu nav__menu">
         <a class="menu__item menu__item--contrast menu__item--bold menu__item--uppercase menu__item--haf-b"
            href="https://en.wikipedia.org/wiki/Yuri_Gagarin">Yuri&nbsp; Gagarin</a>
@@ -173,14 +178,16 @@
       </div>
 
       <div class="uikit--content">
-        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--dotted link--haf--o">Link with dotted and hover-active-focus opacity effect.</a>
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--dotted link--haf--o">Link with dotted and
+          hover-active-focus opacity effect.</a>
       </div>
       <div class="uikit--tag-name">
         <span class="tag-name">.link .link--dotted .link--haf--o</span>
       </div>
 
       <div class="uikit--content">
-        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--dotted link--haf--b">Link with dotted and bordered opacity effect</a>
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--dotted link--haf--b">Link with dotted and
+          bordered opacity effect</a>
       </div>
       <div class="uikit--tag-name">
         <span class="tag-name">.link .link--dotted .link--haf--b</span>
@@ -195,16 +202,266 @@
       </div>
 
       <div class="uikit--content">
-        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--bordered link--haf--o">Link with bordered and hover-active-focus opacity effect.</a>
+        <a href="https://en.wikipedia.org/wiki/Vostok_1" class="link link--bordered link--haf--o">Link with bordered and
+          hover-active-focus opacity effect.</a>
       </div>
       <div class="uikit--tag-name">
         <span class="tag-name">.link .link--bordered link--haf--o</span>
       </div>
 
+      <div class="uikit--content">
+        <button class="btn">Start</button>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.btn</span>
+      </div>
+      <div class="uikit--content">
+        <button class="btn btn--big">Start</button>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.btn--big</span>
+      </div>
 
+      <div class="uikit--content">
+        <ul class="list--dots">
+          <li class="list__item">Sputnik 1</li>
+          <li class="list__item">Vostok 1</li>
+          <li class="list__item">Salyut 1</li>
+          <li class="list__item">Mir</li>
+        </ul>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.list--dots > .list__item</span>
+      </div>
+
+      <div class="uikit--content">
+        <ul class="list--numeric">
+          <li class="list__item">Sputnik 1</li>
+          <li class="list__item">Vostok 1</li>
+          <li class="list__item">Salyut 1</li>
+          <li class="list__item">Mir</li>
+        </ul>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.list--numeric > .list__item</span>
+      </div>
+
+      <div class="uikit--content">
+        <ul class="list">
+          <li class="list__item">Sputnik 1</li>
+          <li class="list__item">Vostok 1</li>
+          <li class="list__item">Salyut 1</li>
+          <li class="list__item">Mir</li>
+        </ul>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.list > .list__item</span>
+      </div>
+
+      <div class="uikit--content">
+        <ul class="list--no-margin-left">
+          <li class="list__item">Sputnik 1</li>
+          <li class="list__item">Vostok 1</li>
+          <li class="list__item">Salyut 1</li>
+          <li class="list__item">Mir</li>
+        </ul>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.list--no-margin-left > .list__item</span>
+      </div>
+
+      <div class="uikit--content">
+        <nav class="menu">
+          <a class="menu__item menu__item--bold menu__item--uppercase menu__item--haf-b"
+             href="https://en.wikipedia.org/wiki/Yuri_Gagarin">Yuri&nbsp; Gagarin</a>
+          <a class="menu__item menu__item--bold menu__item--uppercase menu__item--haf-b"
+             href="https://en.wikipedia.org/wiki/Alexey_Leonov">Alexey&nbsp; Leonov</a>
+          <a class="menu__item menu__item--bold menu__item--uppercase menu__item--haf-b"
+             href="https://en.wikipedia.org/wiki/Valentina_Tereshkova">Valentina&nbsp; Tereshkova</a>
+        </nav>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.menu > .menu__item.menu__item--bold.menu__item--uppercase.menu__item--haf-b)</span>
+      </div>
+
+      <div class="uikit--content">
+        <img class='img--fullwidth' src="dist/img/Gagarin.jpg"
+             title="Yuri Alekseyevich Gagarin - the first human to journey into outer space when his Vostok spacecraft completed an orbit of the Earth on 12 April 1961.">
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.img--fullwidth</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--color">
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__container > .layout--wrapper</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--col2 uikit__container--color">
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__container { @extend $layout__col2 } > .layout--wrapper</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--col3 uikit__container--color">
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__container { @extend $layout__col3 } > .layout--wrapper</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--col4 uikit__container--color">
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__container { @extend $layout__col4 } > .layout--wrapper</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--col5 uikit__container--color">
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__container { @extend $layout__col5 } > .layout--wrapper</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--col6 uikit__container--color">
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__container { @extend $layout__col6 } > .layout--wrapper</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--col2-62-38 uikit__container--color">
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__container { @extend $layout__col2--62-38 } > .layout--wrapper</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--col2-38-62 uikit__container--color">
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+          <div class="layout__wrapper uikit__wrapper--color"></div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__container { @extend $layout__col2--38-62 } > .layout--wrapper</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--col2">
+          <div class="layout__wrapper uikit__icon--left--huge">
+            <img src="dist/img/Gagarin-and-vostok.png" class="icon icon--huge" alt="icon Vostok 1 and Yuri Gagarin"
+                 title="icon Vostok 1">
+            <p class="text">
+              The orbital spaceflight consisted of a single orbit around Earth which skimmed the upper atmosphere at 169
+              kilometers (91 nautical miles) at its lowest point. The flight took 108 minutes from launch to landing.
+              Gagarin parachuted to the ground separately from his capsule after ejecting at 7 km (23,000 ft) altitude.
+            </p>
+          </div>
+          <div class="layout__wrapper uikit__icon--left--huge">
+            <img src="dist/img/Gagarin-and-vostok.png" class="icon icon--huge" alt="icon Vostok 1 and Yuri Gagarin"
+                 title="icon Vostok 1">
+            <p class="text">
+              The orbital spaceflight consisted of a single orbit around Earth which skimmed the upper atmosphere at 169
+              kilometers (91 nautical miles) at its lowest point. The flight took 108 minutes from launch to landing.
+              Gagarin parachuted to the ground separately from his capsule after ejecting at 7 km (23,000 ft) altitude.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__wrapper { @extend $layout__wrapper--icon-left--huge} > .icon + .text</span>
+      </div>
+
+      <div class="uikit--content uikit--content--fullwidth">
+        <div class="layout__container uikit__container--col2">
+          <div class="layout__wrapper uikit__icon--top--huge">
+            <img src="dist/img/Gagarin-and-vostok.png" class="icon icon--huge" alt="icon Vostok 1 and Yuri Gagarin"
+                 title="icon Vostok 1">
+            <p class="text">
+              The orbital spaceflight consisted of a single orbit around Earth which skimmed the upper atmosphere at 169
+              kilometers (91 nautical miles) at its lowest point. The flight took 108 minutes from launch to landing.
+              Gagarin parachuted to the ground separately from his capsule after ejecting at 7 km (23,000 ft) altitude.
+            </p>
+          </div>
+          <div class="layout__wrapper uikit__icon--top--huge">
+            <img src="dist/img/Gagarin-and-vostok.png" class="icon icon--huge" alt="icon Vostok 1 and Yuri Gagarin"
+                 title="icon Vostok 1">
+            <p class="text">
+              The orbital spaceflight consisted of a single orbit around Earth which skimmed the upper atmosphere at 169
+              kilometers (91 nautical miles) at its lowest point. The flight took 108 minutes from launch to landing.
+              Gagarin parachuted to the ground separately from his capsule after ejecting at 7 km (23,000 ft) altitude.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="uikit--tag-name">
+        <span class="tag-name">.layout__wrapper { @extend $layout__wrapper--icon-top--huge} > .icon + .text</span>
+      </div>
     </div>
   </div>
 </section>
+<footer class="footer">
+  <div class="layout__container">
+    <div class="layout__wrapper footer__wrapper">
+      <div class="text text--no-margin-bottom">2018. MIT License. Created by <a href="https://github.com/akalightowl/"
+                                                                                class="link link--dotted link--haf--b">akalightowl</a>
+      </div>
+      <a class="link link--dotted link--haf--b footer__link" href="https://github.com/akalightowl/vostok1">Repo on
+        GitHub</a>
+    </div>
+  </div>
+  <script>
+    const mainNav = document.querySelector('.main-nav');
+    const mainNavMenu = document.querySelector('.nav__menu');
+    const mainNavHamburger = document.querySelector('.main-nav__hamburger');
+    const mainNavHamburgerLines = document.querySelectorAll('.hamburger__line');
+
+    mainNavHamburger.addEventListener('click', toggleMenuOpen);
+
+    function toggleMenuOpen() {
+      mainNav.classList.toggle('main-nav--mobile--menu-open');
+      mainNavMenu.classList.toggle('nav__menu--mobile--menu-open');
+      for (let i = 0; i < mainNavHamburgerLines.length; i += 1) {
+        mainNavHamburgerLines[i].classList.toggle('hamburger__line--mobile--menu-open');
+      }
+    }
+  </script>
+</footer>
 </body>
 
 </html>

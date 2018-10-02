@@ -1,0 +1,32 @@
+@import "../../_variables.styl"
+
+.icon
+  display block
+  background-repeat no-repeat
+  background-position center center
+  width 100%
+
+  @media screen and (max-width: mq-desktop--start)
+    width auto
+    align-self center
+    margin-bottom margin--base
+
+.icon--small
+  @extend .icon
+  max-width icon-size--small
+  max-height  icon-size--small
+
+.icon--base
+  @extend .icon
+  max-width icon-size--base
+  max-height  icon-size--base
+
+.icon--big
+  @extend .icon
+  max-width icon-size--big
+  max-height  icon-size--big
+
+.icon--huge
+  @extend .icon
+  max-width icon-size--huge
+  max-height  icon-size--huge

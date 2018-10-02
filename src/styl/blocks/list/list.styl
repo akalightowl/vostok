@@ -1,0 +1,45 @@
+@import "../../_variables.styl"
+
+.list
+  display flex
+  flex-direction column
+  margin margin--base 0 margin--base margin--base
+
+  &__item
+    color color-main
+    display inline-block
+    font-family text--font-family
+    font-size text--font-size
+    font-weight text--font-weight--normal
+    line-height text--line-height
+    margin 0 0 margin--base 0
+    text-decoration none
+    &:last-child
+      margin-bottom 0
+
+.list--no-margin-left
+  @extend .list
+  margin-left 0
+
+.list--dots
+  @extend .list
+
+  .list__item
+    position relative
+    &:before
+      color color-brand
+      content '∙'
+      display block
+      font-size 3rem
+      left -1rem
+      position absolute
+      top 0
+
+.list--numeric
+  @extend .list
+
+  list-style decimal
+  margin-left margin--base
+
+  .list__item
+    display list-item

@@ -1,0 +1,40 @@
+@import "../../_variables.styl"
+
+.btn
+  -moz-appearance none
+  -webkit-appearance none
+  appearance none
+  background-color btn--background
+  border-radius border-radius
+  border 1px solid transparent
+  color btn--color
+  cursor pointer
+  display inline-block
+  font-family btn--font-family
+  font-size btn--font-size
+  font-weight btn--font-weight
+  margin 0 margin__base 0 0
+  outline 0
+  padding btn--padding--v btn--padding--h
+  text-decoration none
+  text-transform btn--transform
+  transition all 110ms ease-in-out
+
+  border-bottom 1px solid rgba(28, 28, 28, 0.28)
+
+  &:hover
+    background btn--background--hover
+    color rgba(255, 255, 255, 0.95)
+
+  &:focus
+    background btn--background--hover
+
+  &:active,
+  &:focus:active
+    background btn--background--active
+    border-bottom 1px solid transparent
+    border-top 1px solid rgba(28, 28, 28, 0.24)
+    color rgba(255, 255, 255, 0.80)
+
+.btn--big
+  padding btn--padding--v--big btn--padding--h--big

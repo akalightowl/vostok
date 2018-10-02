@@ -8,6 +8,11 @@
 @import "styl/blocks/link"
 @import "styl/blocks/logo"
 @import "styl/blocks/menu"
+@import "styl/blocks/hamburger"
+@import "styl/blocks/list"
+@import "styl/blocks/img"
+@import "styl/blocks/icon"
+@import "styl/blocks/btn"
 
 body
   background url('./img/bg.jpg') right -140px no-repeat #00112b
@@ -15,6 +20,13 @@ body
 .main-nav
   display block
   overflow hidden
+  transform all times--elements
+
+  &--mobile--menu-open
+    @media screen and (max-width mq-desktop--start)
+      height 100vh
+      background-color color-gray--darken
+      z-index 100
 
 .main-nav__wrapper
   @extend $layout__col2
@@ -22,11 +34,30 @@ body
   margin-top margin--huge
   align-items baseline
 
+  @media screen and (max-width mq-desktop--start)
+    display grid
+    grid-template-columns 1fr 1fr
+    grid-template-rows 1fr auto
+
 .nav__logo
   justify-self start
 
 .nav__menu
   justify-self end
+
+  @media screen and (max-width mq-desktop--start)
+    display none
+
+  &--mobile--menu-open
+    @media screen and (max-width mq-desktop--start)
+      grid-column 1 / span2
+      grid-row 2
+      display flex
+      flex-direction column
+      justify-self center
+      justify-content center
+      min-height 80vh
+      align-items center
 
 .promo__wrapper
   border-bottom 1px solid rgba(255, 255, 255, 0.38)
@@ -41,7 +72,7 @@ body
 
 .uikit
   background-color color-gray--lightest
-  padding-top padding--huge
+  padding padding--huge 0
 
 .uikit__wrapper
   align-items center
@@ -70,3 +101,57 @@ body
   margin 0
   border 1px solid color-gray--light
   background-color color-info
+
+.uikit__container--color
+  background-color rgba(204, 207, 207, 0.69)
+
+.uikit__wrapper--color
+  background-color rgba(204, 207, 207, 0.69)
+  min-height 200px
+  text-align justify
+
+.uikit--content--fullwidth
+  grid-column 1 / 3
+
+.uikit__container--col2
+  @extend $layout__col2
+
+.uikit__container--col3
+  @extend $layout__col3
+
+.uikit__container--col4
+  @extend $layout__col4
+
+.uikit__container--col5
+  @extend $layout__col5
+
+.uikit__container--col6
+  @extend $layout__col6
+
+.uikit__container--col2-62-38
+  @extend $layout__col2--62-38
+
+.uikit__container--col2-38-62
+  @extend $layout__col2--38-62
+
+.uikit__icon--left--huge
+  margin margin--base 0
+  background-color transparent
+  @extend $layout__wrapper--icon-left--huge
+
+.uikit__icon--top--huge
+  margin margin--base 0
+  background-color transparent
+  @extend $layout__wrapper--icon-top--huge
+
+.footer
+  background color-gray--light
+
+.footer__wrapper
+  @extend $layout__col2
+
+  padding padding--big 0
+  align-items baseline
+
+.footer__link
+  justify-self end

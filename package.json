@@ -1,6 +1,6 @@
 {
   "name": "vostok1",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple wireframe to create robust pages on different frameworks. Bem elements on Stylus for a fast start with Angular or Pug or simple HTML/CSS project.",
   "main": "index.html",
   "repository": "git@github.com:akalightowl/vostok1.git",

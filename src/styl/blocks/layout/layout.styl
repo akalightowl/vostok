@@ -5,6 +5,15 @@ $layout
   display block
   width 100%
 
+  @media screen and (max-width mq-desktop--start)
+    display flex
+    flex-direction column
+    & > div
+      margin-bottom 2rem
+
+    & > div:last-child
+      margin-bottom 0
+
 .layout__container
   @extend $layout
   margin 0 auto
@@ -14,10 +23,95 @@ $layout
 .layout__wrapper
   @extend $layout
 
-$layout__col2
+$layout__col
   display grid
+  grid-column-gap margin--big
+
+  @media screen and (max-width mq-desktop--start)
+    display flex
+    flex-direction column
+    & > div
+      margin-bottom 2rem
+
+    & > div:last-child
+      margin-bottom 0
+
+$layout__col2
+  @extend $layout__col
   grid-template-columns 1fr 1fr
 
+$layout__col3
+  @extend $layout__col
+  grid-template-columns 1fr 1fr 1fr
+
+$layout__col4
+  @extend $layout__col
+  grid-template-columns 1fr 1fr 1fr 1fr
+
+$layout__col5
+  @extend $layout__col
+  grid-template-columns 1fr 1fr 1fr 1fr 1fr
+
+$layout__col6
+  @extend $layout__col
+  grid-template-columns 1fr 1fr 1fr 1fr 1fr 1fr
+
 $layout__col2--62-38
-  display grid
+  @extend $layout__col
   grid-template-columns 62% 38%
+
+$layout__col2--38-62
+  @extend $layout__col
+  grid-template-columns 38% 62%
+
+$layout__wrapper--icon-left
+  display grid
+  grid-gap 1rem
+
+  @media screen and (max-width: mq-desktop--start)
+    display flex
+    flex-direction column
+    & > div
+      margin-bottom 2rem
+
+    & > div:last-child
+      margin-bottom 0
+
+$layout__wrapper--icon-left--small
+  @extend $layout__wrapper--icon-left
+  grid-template-columns icon-size--small auto
+
+$layout__wrapper--icon-left--base
+  @extend $layout__wrapper--icon-left
+  grid-template-columns icon-size--base auto
+
+$layout__wrapper--icon-left--big
+  @extend $layout__wrapper--icon-left
+  grid-template-columns icon-size--big auto
+
+$layout__wrapper--icon-left--huge
+  @extend $layout__wrapper--icon-left
+  grid-template-columns icon-size--huge auto
+
+$layout__wrapper--icon-top
+  display grid
+  grid-gap 1rem
+  justify-items center
+  & > div:last-child
+    margin-bottom 0
+
+$layout__wrapper--icon-top--small
+  @extend $layout__wrapper--icon-top
+  grid-template-rows icon-size--small auto
+
+$layout__wrapper--icon-top--base
+  @extend $layout__wrapper--icon-top
+  grid-template-rows icon-size--base auto
+
+$layout__wrapper--icon-top--big
+  @extend $layout__wrapper--icon-top
+  grid-template-rows icon-size--big auto
+
+$layout__wrapper--icon-top--huge
+  @extend $layout__wrapper--icon-top
+  grid-template-rows icon-size--huge auto
