@@ -24,15 +24,16 @@ body
 
   &--mobile--menu-open
     @media screen and (max-width mq-desktop--start)
-      height 100vh
       background-color color-gray--darken
+      height 100vh
       z-index 100
 
 .main-nav__wrapper
   @extend $layout__col2
 
-  margin-top margin--huge
   align-items baseline
+  grid-template-columns 200px auto
+  margin-top margin--huge
 
   @media screen and (max-width mq-desktop--start)
     display grid
@@ -50,14 +51,14 @@ body
 
   &--mobile--menu-open
     @media screen and (max-width mq-desktop--start)
-      grid-column 1 / span2
-      grid-row 2
+      align-items center
       display flex
       flex-direction column
-      justify-self center
+      grid-column 1 / span2
+      grid-row 2
       justify-content center
+      justify-self center
       min-height 80vh
-      align-items center
 
 .promo__wrapper
   border-bottom 1px solid rgba(255, 255, 255, 0.38)
@@ -66,9 +67,15 @@ body
   overflow hidden
   padding-bottom 8rem
 
+  @media screen and (max-width mq-desktop--start)
+    max-width 100%
+
 .introduction__wrapper
   max-width 62%
   padding-bottom padding--huge
+
+  @media screen and (max-width mq-desktop--start)
+    max-width 100%
 
 .uikit
   background-color color-gray--lightest
@@ -81,26 +88,38 @@ body
   grid-row-gap margin--base
   grid-template-columns 62% auto
 
+  @media all and (max-width: mq-desktop--start)
+    display flex
+    flex-direction column
+    align-items flex-start
+
 .uikit__header
-  text-transform uppercase
-  padding-bottom padding--base
-  margin-top margin--huge
   border-bottom 1px solid color-gray--light
+  margin-top margin--huge
+  padding-bottom padding--base
+  text-transform uppercase
+
+  @media all and (max-width: mq-desktop--start)
+    display none
 
 .uikit__item
-  margin-top 0
-  margin-bottom 0
   display block
+  margin-bottom 0
+  margin-top 0
 
 .tag-name
   @extend .text
-  padding .2rem .5rem
-  display inline-block
+
+  background-color color-info
+  border 1px solid color-gray--light
   border-radius border-radius
+  display inline-block
   font-size text__small--font-size
   margin 0
-  border 1px solid color-gray--light
-  background-color color-info
+  padding .2rem .5rem
+
+  @media all and (max-width: mq-desktop--start)
+    margin margin--big 0
 
 .uikit__container--color
   background-color rgba(204, 207, 207, 0.69)
@@ -112,6 +131,10 @@ body
 
 .uikit--content--fullwidth
   grid-column 1 / 3
+
+  @media all and (max-width: mq-desktop--start)
+    grid-column inherit
+    width 100%
 
 .uikit__container--col2
   @extend $layout__col2
@@ -135,14 +158,16 @@ body
   @extend $layout__col2--38-62
 
 .uikit__icon--left--huge
-  margin margin--base 0
-  background-color transparent
   @extend $layout__wrapper--icon-left--huge
 
-.uikit__icon--top--huge
-  margin margin--base 0
   background-color transparent
+  margin margin--base 0
+
+.uikit__icon--top--huge
   @extend $layout__wrapper--icon-top--huge
+
+  background-color transparent
+  margin margin--base 0
 
 .footer
   background color-gray--light
@@ -150,8 +175,8 @@ body
 .footer__wrapper
   @extend $layout__col2
 
-  padding padding--big 0
   align-items baseline
+  padding padding--big 0
 
 .footer__link
   justify-self end

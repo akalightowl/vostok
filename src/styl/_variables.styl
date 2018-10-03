@@ -158,48 +158,22 @@ mq-full--hd = 1920px
 
 // Portrait
 
-mq-mobile--iphone455s--p = 320px
-mq-mobile--iphone455s--p--res = 2dppx
-
-mq-mobile--galaxy3--p = 320px
-mq-mobile--galaxy3--p--res = 2dppx
-
-mq-mobile--galaxy45--p = 320px
-mq-mobile--galaxy3--p--res = 3dppx
-
-mq-mobile--galaxy6--p = 360px
-mq-mobile--galaxy6--p--res = 4dppx
-
-mq-mobile--iphone66s78--p = 375px
-mq-mobile--iphone66s78--p--res = 2dppx
-
-mq-mobile--iphoneX--p = 375px
-mq-mobile--iphoneX--p-res = 3dppx
-
-mq-mobile--iphone6p7p8p--p = 414px
-mq-mobile--iphone6p7p8p--p--res = 3dppx
-
-// Landscape
-
-mq-mobile--iphone455s--l = 480px
-mq-mobile--iphone455s--l--res = 2dppx
-
-mq-mobile--iphone55s--l = 568px
-mq-mobile--iphone55s--l--res = 2dppx
-
-mq-mobile--galaxy3456--l = 640px
-mq-mobile--galaxy3--l--res = 2dppx
-mq-mobile--galaxy45--l--res = 3dppx
-mq-mobile--galaxy6--l--res = 4dppx
-
-mq-mobile--iphone66s78--l = 667px
-mq-mobile--iphone66s78--l--res = 2dppx
-
-mq-mobile--iphoneX--l = 812px
-mq-mobile--iphoneX--l-res = 3dppx
-
-mq-mobile--iphone6p7p8p--l = 736px
-mq-mobile--iphone6p7p8p--l--res = 3dppx
+--mq-mobile = {
+  iphone4-5s--p: '(max-width: 320px) and (min-resolution: 2dppx) and (orientation: portrait)',
+  iphone6-8--p: '(max-width: 375px) and (min-resolution: 2dppx) and (orientation: portrait)',
+  iphone6p-XsM--p: '(max-width: 414px) and (min-resolution: 3dppx) and (orientation: portrait)',
+  galaxy45--p: '(max-width: 320px) and (min-resolution: 3dppx) and (orientation: portrait)',
+  galaxy6--p: '(max-width: 360px) and (min-resolution: 4dppx) and (orientation: portrait)',
+  iphone4--l: '(max-width: 480px) and (min-resolution: 2dppx) and (orientation: landscape)',
+  iphone55s--l: '(max-width: 568px) and (min-resolution: 2dppx) and (orientation: landscape)',
+  iphone6-8--l: '(max-width: 667px) and (min-resolution: 2dppx) and (orientation: landscape)',
+  iphone6p-8p--l: '(max-width: 736px) and (min-resolution: 3dppx) and (orientation: landscape)',
+  iphoneX-Xs--l: '(max-width: 812px) and (min-resolution: 3dppx) and (orientation: landscape)',
+  iphoneXsM--l: '(max-width: 896px) and (min-resolution: 3dppx) and (orientation: landscape)',
+  galaxy3--l: '(max-width: 640px) and (min-resolution: 2dppx) and (orientation: landscape)',
+  galaxy4-5--l: '(max-width: 640px) and (min-resolution: 3dppx) and (orientation: landscape)',
+  galaxy6--l: '(max-width: 640px) and (min-resolution: 4dppx) and (orientation: landscape)'
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 // Buttons

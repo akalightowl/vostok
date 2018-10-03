@@ -5,6 +5,7 @@
   display block
   font-family header--font-family
   font-weight header--font-weight--bold
+  word-wrap break-word
 
   &--main
     font-size header__main--font-size
@@ -12,15 +13,45 @@
     line-height header__main--line-height
     margin header__main--margin
 
+    header--main--mobile = @block {
+      font-size header__main--font-size--mobile
+      line-height header__main--line-height--mobile
+      margin header__main--margin--mobile
+    }
+
+    @media --mq-mobile.iphone4-5s--p, --mq-mobile.iphone6-8--p, --mq-mobile.iphone6p-XsM--p, --mq-mobile.galaxy45--p, --mq-mobile.galaxy6--p, --mq-mobile.iphone4--l {
+      {header--main--mobile}
+    }
+
   &--sub
     font-size header__sub--font-size
     line-height header__sub--line-height
     margin header__sub--margin
 
+    header--sub--mobile = @block {
+      font-size header__sub--font-size--mobile
+      line-height header__sub--line-height--mobile
+      margin header__sub--margin--mobile
+    }
+
+    @media --mq-mobile.iphone4-5s--p, --mq-mobile.iphone6-8--p, --mq-mobile.iphone6p-XsM--p, --mq-mobile.galaxy45--p, --mq-mobile.galaxy6--p, --mq-mobile.iphone4--l {
+      {header--sub--mobile}
+    }
+
   &--small
     font-size header__small--font-size
     line-height header__small--line-height
     margin header__small--margin
+
+    header--small--mobile = @block {
+      font-size header__small--font-size--mobile
+      line-height header__small--line-height--mobile
+      margin header__small--margin--mobile
+    }
+
+    @media --mq-mobile.iphone4-5s--p, --mq-mobile.iphone6-8--p, --mq-mobile.iphone6p-XsM--p, --mq-mobile.galaxy45--p, --mq-mobile.galaxy6--p, --mq-mobile.iphone4--l {
+      {header--small--mobile}
+    }
 
   &--tiny
     font-weight header--font-weight--light
@@ -28,6 +59,16 @@
     line-height header__tiny--line-height
     margin header__tiny--margin
     text-transform uppercase
+
+    header--tiny--mobile = @block {
+      font-size header__tiny--font-size--mobile
+      line-height header__tiny--line-height--mobile
+      margin header__tiny--margin--mobile
+    }
+
+    @media --mq-mobile.iphone4-5s--p, --mq-mobile.iphone6-8--p, --mq-mobile.iphone6p-XsM--p, --mq-mobile.galaxy45--p, --mq-mobile.galaxy6--p, --mq-mobile.iphone4--l {
+      {header--tiny--mobile}
+    }
 
   &--promo
     font-weight header--font-weight--light
