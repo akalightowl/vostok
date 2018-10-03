@@ -37,10 +37,14 @@ body
   grid-template-columns 200px auto
   margin-top margin--huge
 
+
   @media screen and (max-width mq-desktop--start)
     display grid
     grid-template-columns 1fr 1fr
     grid-template-rows 1fr auto
+
+    &--mobile--menu-open
+      padding 0 padding--base
 
 .nav__logo
   justify-self start
