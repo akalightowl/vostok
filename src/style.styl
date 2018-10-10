@@ -14,6 +14,16 @@
 @import "styl/blocks/icon"
 @import "styl/blocks/btn"
 
+html
+  @media all and (min-resolution: mq-windows--100)
+    font-size font-size--zoom--100
+  @media all and (min-resolution: mq-windows--125)
+    font-size font-size--zoom--125
+  @media all and (min-resolution: mq-windows--150)
+    font-size font-size--zoom--150
+  @media all and (min-resolution: mq-windows--175)
+    font-size font-size--zoom--175
+
 body
   background url('./img/bg.jpg') right -140px no-repeat #00112b
 
@@ -36,7 +46,6 @@ body
   align-items baseline
   grid-template-columns 200px auto
   margin-top margin--huge
-
 
   @media screen and (max-width mq-desktop--start)
     display grid
